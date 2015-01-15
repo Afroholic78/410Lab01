@@ -12,7 +12,8 @@ class Student:
 		average = 0;
 		for x in self.courseMarks:
 			average += self.courseMarks[x]
-		self.average = average/len(self.courseMarks)
+		if len(self.courseMarks):
+			self.average = average/len(self.courseMarks)
 
 S = Student("Ash", "Ketchum")
 S.addCourseMark("410", 4)
