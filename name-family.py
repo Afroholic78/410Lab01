@@ -7,6 +7,7 @@ class Student:
 
 	def addCourseMark(self, course, mark):
 		self.courseMarks[course] = mark
+		
 
 	def average(self):
 		average = 0;
